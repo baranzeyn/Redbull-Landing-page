@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section class="header">
+        <header>
+            <div class="container">
+                <div class="navbar flex1">
+                    <div class="logo">
+                        <img src="images/redbullcom-logo_double-with-text-removebg-preview.png" alt="">
+                    </div>
+
+                    <nav>
+                        <ul id="menuitem">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#function">Functionality</a></li>
+                            <li><a href="#feautures">Features</a></li>
+                        </ul>
+                        <button>Get Started</button>
+                    </nav>
+                    <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+                </div>
+            </div>
+        </header>
+    </section>
+
+
+    <script>
+        var menuitem = document.getElementById("menuitem");
+        menuitem.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuitem.style.maxHeight == '0px') {
+                menuitem.style.maxHeight = "500px"
+            } else {
+                menuitem.style.maxHeight = "0px"
+            }
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 50);
+        })
+    </script>
+
+    <section class="home" id="home">
+        <div class="container flex1">
+            <div class="left">
+                <h1>Empower Your Business with Our Exceptional App</h1>
+                <p>Discover the Excitement: Redbull Products Now Available!
+                    Explore, Shop, and Energize with Redbull.</p>
+
+                <div class="button flex">
+                    <button class="btn1">Explore Features</button>
+                    <button class="btn2">Learn More</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img">
+                    <img src="images/[removal.ai]_d497b0e7-045e-4302-9584-9467b58c083c-giris.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview mtop" id="overview">
+        <br><br><br>
+        <div class="container">
+            <div class="heading">
+                <h1>App Overview</h1>
+                <p>The application provides a user-friendly platform for purchasing sports products and tracking
+                    athletes. It features e-commerce functionality for mobile devices and is supported by a web-based
+                    promotional site.</p>
+            </div>
+
+    </section>
+
+    <section class="overview mtop" id="overview">
+        <br><br><br>
+        <div class="container">
+            <div class="heading">
+                <h1>App Features </h1>
+                <p>Elevate Your Business with Our Exceptional App</p>
+            </div>
+            <div class="content grid mtop">
+                <div class="box">
+                    <div class="img">
+                        <img src="images/o1.png" alt="">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="text">
+                        <h3>User Management</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/o2.png" alt="">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Athlete Tracking</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/o3.png" alt="">
+                        <i class="fas fa-line"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Web-Based Promotional Site</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="function  top" id="function">
+        <div class="container">
+            <div class="heading">
+                <h1>Major Functionalities</h1>
+                <p>Enhance Your Brand Potential With Giant Advertising Blimps</p>
+            </div>
+
+            <div class="fun_content">
+                <div class="content flex mtop">
+                    <div class="left">
+                        <i class="fad fa-chart-bar"></i>
+                        <h3>User Authentication and Management</h3>
+                        <p>User registration with essential details like name, username, email, etc.
+                            Login functionality allowing users to access their accounts securely.
+                            Profile management for users to update their information and preferences.</p>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="images/[removal.ai]_f3e93697-db6d-4212-9ba9-ec12340f9dff-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content flex mtop">
+                    <div class="left">
+                        <i class="fad fa-print-search"></i>
+                        <h3>Product Listing and Search</h3>
+                        <p>Categorization of products for easy browsing.
+                            Search functionality enabling users to find specific items quickly.
+                            Detailed product pages providing comprehensive information.</p>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="images/[removal.ai]_b36e6b9d-c96e-4c99-9454-e03791a04458-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content flex mtop">
+                    <div class="left">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Athlete Profile Viewing and Tracking:</h3>
+                        <p>Access to athlete profiles for users to explore.
+                            Ability to follow and track athletes of interest.</p>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="images/3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features mtop" id="features">
+        <div class="container">
+            <div class="heading">
+                <h1>Exclusive Features</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, ut.</p>
+            </div>
+
+            <div class="content flex mtop">
+                <div class="left grid">
+                    <div class="box">
+                        <div class="img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h3>Hyper-efficient RESTful API Integration:</h3>
+                            
+                        <p>Seamlessly integrates with a cutting-edge RESTful API architecture, ensuring lightning-fast data exchange between the application and server.
+                            Guarantees unparalleled performance and scalability for a truly dynamic user experience.</p>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h3>Rapid and Reliable Integration with Relational Database</h3>
+                        <p>Seamlessly integrates with a robust relational database, ensuring swift and dependable data exchange.
+                            Provides superior performance and reliability, enabling users to experience uninterrupted service.</p>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h3>Exclusive iOS Support</h3>
+                        <p>Tailored specifically for iOS devices, ensuring a seamless and optimized experience for Apple users.
+                            Capitalizes on the unique features and capabilities of iOS, offering a premium experience unavailable on other platforms.</p>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <i class="ffar fa-gem"></i>
+                        </div>
+                        <h3>Comprehensive Promotional Website</h3>
+                        <p>Boasts a dedicated promotional website that showcases the application's features, benefits, and unique selling points.
+                            Provides potential users with a compelling overview of the app's capabilities, fostering interest and encouraging downloads.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="image">
+                        <img src="images/fe.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
